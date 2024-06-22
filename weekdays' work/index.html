@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하루 일과 기록</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>하루 일과 기록</h1>
+        <form id="activity-form">
+            <label for="weekday">요일 선택:</label><br>
+            <select id="weekday" name="weekday" required>
+                <option value="월요일">월요일</option>
+                <option value="화요일">화요일</option>
+                <option value="수요일">수요일</option>
+                <option value="목요일">목요일</option>
+                <option value="금요일">금요일</option>
+            </select><br><br>
+            <label for="daily-activity">오늘의 활동:</label><br>
+            <textarea id="daily-activity" name="daily-activity" rows="4" cols="50" required></textarea><br><br>
+            <button type="submit">기록하기</button>
+        </form>
+        <h2>이전 기록</h2>
+        <div id="previous-activities">
+            <!-- 이전 기록들이 여기에 표시됩니다 -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
